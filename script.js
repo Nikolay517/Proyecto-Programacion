@@ -1,5 +1,6 @@
 const students=[]
-const tableBody=document.querySelector("#studentsTable tbody")
+const tableBody=document.querySelector("#studentsTable tbody");
+const averageDiv=document.getElementById("average");
 document.getElementById("studentForm").addEventListener("submit",function (e){
 e.preventDefault();
  
@@ -32,3 +33,4 @@ function addStudentToTable(student){
        <td>${student.date}</td>`;
      tableBody.appendChild(row);
        }
+       
